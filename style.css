@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: Outfit;
+}
+body{
+    /* color: #D4BEE4; */
+    background-color: #dcdcdc;
+    color: #3B1E54;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+button{
+    cursor: pointer;
+    border-radius: 4px;
+    background: #3B1E54;
+    border: none;
+    outline: none;
+    color: #dcdcdc;
+    padding: 5px 12px;
+    font-size: 20px;
+}
+.settings-btn{
+    position: absolute;
+    left: 35px;
+    bottom: 35px;
+}
+.settings{
+    background-color: #3B1E54;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(0);
+    transition: transform 0.5s ease;
+    /* font-weight: 600; */
+    letter-spacing: 1px;
+    font-size: 18px;
+    color: #dcdcdc;
+}
+.settings.hide{
+    transform: translateY(-100%);
+}
+select{
+    width: 100px;
+    background: #dcdcdc;
+    border-radius: 2px;
+    outline: none;
+    color: #3B1E54;
+}
+.container{
+    margin-top: 30px;
+    background-color: #3B1E54;
+    color: #dcdcdc;
+    width: 400px;
+    padding: 30px 0px 30px 0px;
+    text-align: center;
+    border-radius: 6px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.6);
+}
+.container>h2{
+    margin: 0;
+    margin-bottom: 20px;
+}
+.container>h1{
+    margin-top: 30px;
+    color: #ae6fda;
+}
+.container>input{
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    padding: 3px 10px;
+    font-size: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+}
+.container>input:focus{
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+}
+.container>p{
+    margin: 0;
+    margin-top: 10px;
+}
+.gameover{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #dcdcdc;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
